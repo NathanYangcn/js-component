@@ -134,7 +134,10 @@
     <script src="../libs/jquery-1.9.1.js"></script>
     <script src="waterfall.js"></script>
     <script>
-        WaterFall.render('.ct');
+        var $lis = $('.ct>li');
+        $lis.find('img').on('load', function(){
+            WaterFall.render('.ct');
+        })
     </script>
 </body>
 </html>

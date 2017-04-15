@@ -30,15 +30,6 @@ var WaterFall = (function(){
             $ct.height(Math.max.apply(null, itemsArr));
         });
     }
-    // 当图片加载完成时，执行瀑布流布局
-    function start(ct){
-        var $ct = $(ct);
-        $ct.children().each(function(){
-            $(this).find('img').on('load', function(){
-                render(ct)
-            })
-        })
-    }
 
     //监听窗口宽高的改变，以便重新调用瀑布流函数渲染界面 ↓
     $(window).on('resize', function(){
@@ -46,6 +37,6 @@ var WaterFall = (function(){
     })
 
     return {
-        render: start
+        render: render
     }
 })()

@@ -1,4 +1,5 @@
 var $window = $(window);
+var $lis = $('.ct>li');
 
 function render() {
     //瀑布流图片布局渲染方法 ↓
@@ -28,19 +29,12 @@ function render() {
         itemsArr[minIndex] += thisHeight;
     });
 }
-// 当图片加载完成时，执行瀑布流布局
-function start(){
-    var $imgCt = $('.ct');
-    $imgCt.children().each(function(){
-        $(this).find('img').on('load', function(){
-            render()
-        })
-    })
-}
 
 //进入页面初次调用 ↓
-start();
+$lis.find('img').on('load', function(){
+    render();
+});
 //监听窗口宽高的改变，以便重新调用瀑布流函数渲染界面 ↓
 $window.on('resize', function(){
     render();
-});
+});   
