@@ -31,8 +31,8 @@ function render() {
 // 当图片加载完成时，执行瀑布流布局
 function start(){
     var $imgCt = $('.ct');
-    $imgCt.find('img').each(function(){
-        $(this).on('load', function(){
+    $imgCt.children().each(function(){
+        $(this).find('img').on('load', function(){
             render()
         })
     })
