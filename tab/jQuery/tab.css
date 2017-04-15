@@ -1,0 +1,52 @@
+/* reset css */
+ul,li {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/* general css */
+.clearfix:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+/* real css */
+.ct {
+    margin: 0 auto;
+    width: 450px;
+}
+.tab {
+    margin: 30px;
+    padding: 15px;
+    border: 1px solid #666;
+    border-radius: 10px;
+    width: 450px;
+}
+.header>li {
+    float: left;
+    padding: 10px;
+    border: 1px solid #666;
+    border-right: none;
+    width: 150px;
+    text-align: center;
+    cursor: pointer;
+}
+.header>li:last-child {
+    border-right: 1px solid #666;
+}
+.header>.active {
+    font-weight: bold;
+    color: red;
+    background-color: #ccc;
+}
+.content>li {
+    display: none;
+    padding: 10px;
+    border: 1px solid #666;
+    border-top: none;
+    height: 200px;
+}
+.content>.active {
+    display: block;
+}
