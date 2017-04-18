@@ -27,4 +27,4 @@
 - [JS代码预览](https://github.com/NathanYangcn/wheels/blob/master/waterfall/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/waterfall.js)
 
 #### 8. domEventUtil(跨浏览器的事件处理程序)
-- [JS代码预览]()
+- [JS代码预览](https://github.com/NathanYangcn/js-component/blob/master/domEventUtil/domEventUtil.js)
