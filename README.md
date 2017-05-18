@@ -28,3 +28,6 @@
 
 #### 8. domEventUtil(跨浏览器的事件处理程序)
 - [JS代码预览](https://github.com/NathanYangcn/js-component/blob/master/domEventUtil/domEventUtil.js)
+
+#### 8. ajaxUtil(封装ajax：简化调用方式)
+- [JS代码预览](https://github.com/NathanYangcn/js-component/blob/master/ajaxUtil/ajaxUtil.js)
